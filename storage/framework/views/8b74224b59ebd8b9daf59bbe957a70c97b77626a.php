@@ -7,7 +7,7 @@
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12 page-content-list">
                 <div class="panel panel-default">
                     <div class="panel-heading">Page | List
                         <div class="pull-right">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 page-content-crud"></div>
+            <div class="col-sm-12 page-content-crud"></div>
         </div>
     </div>
 </div>

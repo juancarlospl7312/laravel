@@ -27,12 +27,15 @@
         let modal_default = $("#modal-default");
         let modal_btn_remove = $("a.btn-remove-custom");
         let form_ajax_action = $(".form-ajax-action");
+        let page_content_list = $(".page-content-list");
 
         form_ajax_action.on('click', function(){
+            page_content_list.hide();
             loadContentCrud($(this).attr("data-href"));
         });
 
         datatable_ajax.on('click', '.action-table', function(){
+            page_content_list.hide();
             loadContentCrud($(this).attr("data-href"));
         });
         datatable_ajax.on('click', '._delete', function(){

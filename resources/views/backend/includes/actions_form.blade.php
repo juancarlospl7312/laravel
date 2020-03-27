@@ -11,6 +11,7 @@
         let select2 = $("select.select2");
         let select = $("form select.form-control");
         let form_action_change_password = $(".form-action-change-password");
+        let page_content_list = $(".page-content-list");
 
         form_action_change_password.on('click', function(){
             $("#password").removeAttr("disabled");
@@ -112,6 +113,7 @@
             }
             else{
                 page_content_crud.empty();
+                page_content_list.show();
             }
         });
         form_action_ok.on('click', function(){
@@ -145,6 +147,7 @@
                             showAlert('success', 'fa fa-check', 'Successful operation');
                             datatable_ajax.DataTable().ajax.reload();
                             page_content_crud.empty();
+                            page_content_list.show();
                         }
                     }
                     if(response.success === false){
